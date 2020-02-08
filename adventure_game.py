@@ -2,7 +2,7 @@ import time
 import random
 
 
-items [random.choice]
+items []
 
 
 def print_pause(message_to_print):
@@ -27,15 +27,20 @@ def intro():
     print_pause("In front of you is a house.")
     print_pause("To your right is a dark cave.")
     print_pause("In your hand you hold your trusty (but not very effective) dagger.")
-    print_pause("What would you like to do?")
+
 
 
 def choices():
     print_pause("Enter 1 to knock on the door of the house.")
     print_pause("Enter 2 to peer into the cave.")
+    print_pause("What would you like to do?")
+    print_pause("(Please enter 1 or 2.)")
     choice = input("1. Knock on the door of the house."
                    "2. Peer into the cave.")
+
     if choice == '1':
+        print_pause("You approach the door of the house.")
+        print_pause("You are about to knock when the door opens and out steps a #random monster#")
 
 
 
