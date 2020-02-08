@@ -25,6 +25,7 @@ def intro():
     print_pause("In front of you is a house.")
     print_pause("To your right is a dark cave.")
     print_pause("In your hand you hold your trusty (but not very effective) dagger.")
+    print_pause("What would you like to do?")
 
 
 def choices():
