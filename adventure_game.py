@@ -1,6 +1,8 @@
 import time
 import random
-items []
+
+
+items [random.choice]
 
 
 def print_pause(message_to_print):
