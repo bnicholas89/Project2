@@ -27,6 +27,7 @@ def house():
     print_pause("The " + mymonster + " attacks you!")
     print_pause("You feel a bit under-prepared for this, what with only have a tiny dagger.")
     print_pause("Would you like to (1) fight or (2) run away?")
+    print_pause()
     choices()
 
 
