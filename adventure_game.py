@@ -62,7 +62,7 @@ def house(item, mymonster):
 
 def cave(item, mymonster):
     if "sword" in item:
-        print_pause("You peer cautiously into the cave.")
+        print_pause("\nYou peer cautiously into the cave.")
         print_pause("You've been here before, and gotten all"
                     " the good stuff. It's just an empty cave"
                     " now.")
