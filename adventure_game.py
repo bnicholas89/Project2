@@ -41,7 +41,7 @@ def house(item, mymonster):
                 print_pause("The Sword of Ogoroth shines brightly in "
                             "your hand as you brace yourself for the "
                             "attack.")
-                print_pause("But the " + mymonster + "takes one look at "
+                print_pause("But the " + mymonster + " takes one look at "
                                                      "your shiny new toy and runs away!")
                 print_pause("You have rid the town of the " + mymonster +
                             ". You are victorious!")
