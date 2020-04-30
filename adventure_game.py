@@ -85,7 +85,7 @@ def field(item, mymonster):
     print_pause("Enter 2 to peer into the cave.")
     print_pause("What would you like to do?")
     while True:
-        choice1 = input("(Please enter 1 or 2.)")
+        choice1 = input("(Please enter 1 or 2)")
         if choice1 == "1":
             house(item, mymonster)
             break
