@@ -5,6 +5,8 @@ monsters = ["Gorgon", "Kikimora", "Bruxa"]
 
 mymonster = random.choice(monsters)
 
+item = []
+
 
 def print_pause(message_to_print):
     print(message_to_print)
@@ -104,9 +106,6 @@ def play_again():
 
 
 def play_game():
-    item = []
-    mymonster = random.choice(monsters)
-    monsters = ["Gorgon", "Kikimora", "Bruxa"]
     intro(item, option)
     field(item, option)
 
