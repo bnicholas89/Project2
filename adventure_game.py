@@ -15,14 +15,16 @@ def print_pause(message_to_print):
     print(message_to_print)
     time.sleep(2)
 
+
 def intro():
-    print_pause("You find yourself standing in an open field, filled with grass and yellow"
-                " wildflowers.")
-    print_pause("Rumor has it that a " + mymonster + " is somewhere around here, and has been"
-                " terrifying the nearby village.")
+    print_pause("You find yourself standing in an open field, filled with "
+                "grass and yellow wildflowers.")
+    print_pause("Rumor has it that a " + mymonster + " is somewhere around "
+                "here, and has been terrifying the nearby village.")
     print_pause("In front of you is a house.")
     print_pause("To your right is a dark cave.")
-    print_pause("In your hand you hold your trusty (but not very effective) dagger.")
+    print_pause("In your hand you hold your trusty (but not very effective) "
+                "dagger.")
 
 
 def house():
@@ -40,12 +42,12 @@ def house():
         if choice2 == "1":
             if "sword" in item:
                 print_pause("As the " + mymonster + " moves to attack, "
-                                                    "you unsheath your new sword.")
+                            "you unsheath your new sword.")
                 print_pause("The Sword of Ogoroth shines brightly in "
                             "your hand as you brace yourself for the "
                             "attack.")
                 print_pause("But the " + mymonster + " takes one look at "
-                                                     "your shiny new toy and runs away!")
+                            "your shiny new toy and runs away!")
                 print_pause("You have rid the town of the " + mymonster +
                             ". You are victorious!")
             else:
@@ -60,7 +62,6 @@ def house():
                         "\nLuckily, you don't seem to have been "
                         "followed.")
             field()
-            break
 
 
 def cave():
@@ -100,7 +101,7 @@ def field():
 def play_again():
     again = input("Would you like to play again? (y/n)").lower()
     if again == "y":
-        print_pause("Excellent! Restarting the game ...")
+        print_pause("Excellent! Restarting the game...")
         play_game()
     elif again == "n":
         print_pause("Thanks for playing! See you next time.")
