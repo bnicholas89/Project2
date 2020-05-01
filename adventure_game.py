@@ -15,17 +15,17 @@ def print_pause(message_to_print):
     print(message_to_print)
     time.sleep(2)
 
-
-def intro(item, mymonster):
-    print_pause("You find yourself standing in an open field, filled with grass and yellow wildflowers.")
-    print_pause("Rumor has it that a " + mymonster + " is somewhere around here, and has been terrifying the nearby "
-                                                     "village.")
+def intro():
+    print_pause("You find yourself standing in an open field, filled with grass and yellow"
+                " wildflowers.")
+    print_pause("Rumor has it that a " + mymonster + " is somewhere around here, and has been"
+                " terrifying the nearby village.")
     print_pause("In front of you is a house.")
     print_pause("To your right is a dark cave.")
     print_pause("In your hand you hold your trusty (but not very effective) dagger.")
 
 
-def house(item, mymonster):
+def house():
     print_pause("You approach the door of the house.")
     print_pause("You are about to knock when the door "
                 "opens and out steps a " + mymonster + ".")
@@ -59,11 +59,11 @@ def house(item, mymonster):
             print_pause("You run back into the field. "
                         "\nLuckily, you don't seem to have been "
                         "followed.")
-            field(item, mymonster)
+            field()
             break
 
 
-def cave(item, mymonster):
+def cave():
     if "sword" in item:
         print_pause("\nYou peer cautiously into the cave.")
         print_pause("You've been here before, and gotten all"
@@ -80,20 +80,20 @@ def cave(item, mymonster):
                     "the sword with you.")
         print_pause("You walk back out to the field.")
         item.append("sword")
-    field(item, mymonster)
+    field()
 
 
-def field(item, mymonster):
+def field():
     print_pause("Enter 1 to knock on the door of the house.")
     print_pause("Enter 2 to peer into the cave.")
     print_pause("What would you like to do?")
     while True:
         choice1 = input("(Please enter 1 or 2)")
         if choice1 == "1":
-            house(item, mymonster)
+            house()
             break
         elif choice1 == "2":
-            cave(item, mymonster)
+            cave()
             break
 
 
@@ -109,8 +109,8 @@ def play_again():
 
 
 def play_game():
-    intro(item, mymonster)
-    field(item, mymonster)
+    intro()
+    field()
 
 
 play_game()
