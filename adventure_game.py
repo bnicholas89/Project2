@@ -1,9 +1,12 @@
 import time
 import random
 
+
 monsters = ["Gorgon", "Kikimora", "Bruxa"]
 
+
 mymonster = random.choice(monsters)
+
 
 item = []
 
